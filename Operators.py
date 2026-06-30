@@ -18,5 +18,15 @@ print(x <= y)
 
 m = 10
 n = 10
-print("If values are same then reference will also same =>", m is n)  # True, because both refer to the same object
+print("If values are same then reference will also same =>", id(m), id(n), m is n, m == n)  # True, because both refer to the same object
+
+#Membership operators
+
+list1 = [1, 2, 3, 4, 5]
+
+print(3 in list1)  # True, because 3 is present in the list
+
+
+
+
 

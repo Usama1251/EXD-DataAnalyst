@@ -13,6 +13,4 @@ from EXD, doing Data Analysis and Visualization using Python.'''
 print(z)
 
 
-phoneNum = "123-456-7890"
 
-print(phoneNum)  # Convert to string for printing

@@ -8,6 +8,6 @@ z = x + y
 print(z) 
 '''
 
-#y = 2x2-3 square root of 2x2-3
-y = 2*x*2 -3
+x = "usama"
 
+print(x.rfind("a"))

@@ -148,3 +148,94 @@
 # a = list1.clear()
 # print(list1)
 # print(a)
+
+#Del() used to delete the values from list
+
+# list1 = [1,2,3,4,5,6,7,8]
+
+# del list1[3:6]
+# print(list1)
+
+# Type casting used in list to convert string or any to list but char by char list  bnaye ga
+
+# str1 = "Python is fun"
+# print("og string ", str1)
+# l1 = list(str1)
+# print(l1)
+
+# spilt() function used to convert string to list based on parameter
+
+# str1 = "Python is fun"
+# a = str1.split(" ")
+# print(a)
+
+# # #Join used to convert list to string
+
+# list1 = ['a', 'b', 'c', 'd', 'e']
+# a = " ".join(list1)
+# print(a)
+
+#Some builtin functions len(), max(), min(), sum()
+
+# list_num = [1,2,3,4,51,6,7,8,9]
+
+# print("Length of List = ", len(list_num))
+# print("Max element in list = ", max(list_num))
+# print("Min element in list = ", min(list_num))
+# print("Sum of the elements in the list = ", sum(list_num))      
+
+#In Aliasing, we used assignment opertor = to store same id value or point same address in memory 
+
+# list1 = [1,2,3,4]
+# list2 = list1
+# list3 = [1,2,3,4]
+
+# print("Id of old list = ", id(list1))
+# print("Id of new list = ", id(list2))
+# print("Id of 3rd list having same value as list 1 = ", id(list3))
+
+# list2[2] = 9
+
+# print("old list ", list1, id(list1))
+# print("new list ", list2, id(list2))
+
+#shallow copy creates a new list object in memory, refreneces will be different in memory, nested list ko copy nhi krta
+ 
+# list1 = [1,2,3,4]
+# list2 = list1[:]
+
+# print("old list ", list1, id(list1))
+# print("new list ", list2, id(list2))
+
+#one more way to shallow copy is by import copy
+# import copy
+
+# list1 = [1,2,3,4]
+# list2 = copy.copy(list1)
+# list2[2] = 51
+# print("old list ", list1, id(list1))
+# print("new list ", list2, id(list2))
+
+# list1 = [1,2,3,[4, 9], [5,7]]
+# list2 = list1[:]
+# list2[2] = 51
+# print("old list ", list1, id(list1))
+# print("new list ", list2, id(list2))
+# print("\n")
+# list2[3][0] = "a"
+# print("old list ", list1, id(list1))
+# print("new list ", list2, id(list2)) #so basically shallow copy nested ki value dono list me change kr deta mean outer list se kam krta not inner, but references will be different in outer but same in nested list
+
+#use deep copy if nested list k values bhi change krni hogi both list se aur reference change hojaye ga nested me bhi
+import copy
+
+list1 = [[0,1], [2,3], [3,4]]
+list2 = copy.deepcopy(list1)
+
+list2[2][0] = "a"
+
+print("old list ", list1, id(list1))
+print("new list ", list2, id(list2))
+
+
+

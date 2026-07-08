@@ -227,15 +227,26 @@
 # print("new list ", list2, id(list2)) #so basically shallow copy nested ki value dono list me change kr deta mean outer list se kam krta not inner, but references will be different in outer but same in nested list
 
 #use deep copy if nested list k values bhi change krni hogi both list se aur reference change hojaye ga nested me bhi
-import copy
+# import copy
 
-list1 = [[0,1], [2,3], [3,4]]
-list2 = copy.deepcopy(list1)
+# list1 = [[0,1], [2,3], [3,4]]
+# list2 = copy.deepcopy(list1)
 
-list2[2][0] = "a"
+# list2[2][0] = "a"
 
-print("old list ", list1, id(list1))
-print("new list ", list2, id(list2))
+# print("old list ", list1, id(list1))
+# print("new list ", list2, id(list2))
 
+#Sort functions used to sort the list
 
+list_num = [6, 5, 1, 9, 2]
 
+list_num.sort() #ascending number
+print(list_num)
+list_num.sort(reverse=True) #descending number
+print(list_num)
+
+list_alpha = ["c", "a", "z", "d"]
+
+list_alpha.sort()
+print(list_alpha)

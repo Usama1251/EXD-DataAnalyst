@@ -239,14 +239,40 @@
 
 #Sort functions used to sort the list
 
-list_num = [6, 5, 1, 9, 2]
+# list_num = [6, 5, 1, 9, 2]
 
-list_num.sort() #ascending number
-print(list_num)
-list_num.sort(reverse=True) #descending number
-print(list_num)
+# list_num.sort() #ascending number
+# print(list_num)
+# list_num.sort(reverse=True) #descending number
+# print(list_num)
 
-list_alpha = ["c", "a", "z", "d"]
+# list_alpha = ["c", "a", "z", "d"]
 
-list_alpha.sort()
-print(list_alpha)
+# list_alpha.sort()
+# print(list_alpha)
+
+# #Length ki base pr sort kre ga
+
+# mul_List = ["dddd", "ccc", "aaaaaa", "bb"]
+# mul_List.sort(key=len) 
+# print(mul_List)
+
+# list1 = ["abcz", "xyza", "bas", "kiran"]
+
+# list1.sort(key= None, reverse=True) #last alphabet k base pr sorting
+# print(list1)
+
+# def last(word):
+#     return word[-1]
+
+# print(last('zainab'))
+
+# list1 = ["abcz", "xyza", "bas", "kiran"]
+# list1.sort(key=last)  #hr element k last alphabet se sorting krega
+# print(list1)
+
+# #membership operators
+
+# list_num = [2,3,1,5,4]
+# a = 5 in list_num
+# print(a)

@@ -42,13 +42,37 @@
 palindList = ['bob', 'dad', 'mom', 'cherry']
 list1 = ["usama", "mobeen", "zia", "awais", "ali"]
 
+#reverse nikal k de ga using comprehension
+newList = [i[::-1] for i in list1]
+print(newList)
+
+#palindrom nikal k de ga using comprehension
 newList = [i for i in palindList if (i == i[::-1])] #ik line me coding krna is comprehension
 
 print("only palindrome ", newList)
 
-newList = [i[::-1] for i in list1]
-print(newList)
+list2 = [1,2,3,4,5]
 
+dict1 = {
+    key: key**3 for key in list2
+}
+print("Dictionary ", dict1)
 
+list3 = range(11)
+dict2 = {
+    key: key**3 for key in list3 if key**3%4 == 0
+}
+print(dict2)
 
+dict3 = {
+    'milk': 123.0,
+    "chocolate": 21,
+    'bread': 90
+}
+
+newDict = {
+    key: value * 1.25 for key, value in dict3.items()
+}
+
+print("Raised prices by 25%", newDict)
 
